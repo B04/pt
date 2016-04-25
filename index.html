@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>PT</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="pomodoro">
+  <h1>Pomodoro Clock</h1>
+    <div class="wrapper">
+      <div class="setter">
+        <div class="set">
+          <p>work</p>
+          <div class="row">
+            <button class="btnset selector" onclick="decrementWork('setworktime', worktime)">&#45;</button>
+            <span id="setworktime">25</span>
+            <button class="btnset selector" onclick="incrementWork('setworktime', worktime)">&#43;</button>
+          </div>
+        </div>
+        <div class="set">
+          <p>break</p>
+          <div class="row">
+            <button class="btnset selector" onclick="decrementBreak('setbreaktime', breaktime)">&#45;</button>
+            <span id="setbreaktime">05</span>
+            <button class="btnset selector" onclick="incrementBreak('setbreaktime', breaktime)">&#43;</button>
+          </div>
+        </div>
+      </div>
+      <hr class="line">
+      <div class="display">
+        <span id="displaymain">00:00</span>
+      </div>
+      <hr class="line">
+      <div class="btnwrap">
+        <div class="set">
+          <button class="btnset" id="startbutton" onclick="startClock()">start</button>
+        </div>
+        <div class="set">
+          <button class="btnset" onclick="pauseClock()">stop</button>
+        </div>
+        <div class="set">
+          <button class="btnset" onclick="resetClock()">reset</button>
+        </div>
+      </div>
+    </div>
+</div>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
